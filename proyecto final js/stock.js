@@ -1,115 +1,68 @@
-const products = [
-    //! CAMISETAS JUGADOR
-{
-id:10,
-name: 'camiseta titular',
-price: 25000,
-brand: 'celeste y blanca',
-stock: 25,
-type: 1,
-},
-{
-id:11,
-name: 'camiseta suplente',
-price: 22000,
-brand: 'violeta',
-stock: 28,
-type: 1,
-},
+const productos =
+[
+    {
+        id: 1,
+        nombre: "Camiseta titular",
+        tipo: "camiseta",
+        desc: "camiseta titular argentina mundial 2022",
+        precio: 22000,
+        talle: "L",
+        imagen: '../images/camititular.jpg',
+        cantidad:1
+    },
 
-    //! CAMISETAS ARQUERO
-{
-id:20,
-name: 'camiseta roja',
-price: 25000,
-brand: 'dibu',
-stock: 25,
-type: 2,
-},
-{
-id:21,
-name: 'camiseta amarilla',
-price: 22000,
-brand: 'dibu suplente',
-stock: 22,
-type: 2,
-},
+    {
+        id: 2,
+        nombre: "Camiseta suplente",
+        tipo: "camiseta",
+        desc: "camiseta suplente argentina mundial 2022",
+        precio: 20000,
+        talle: "L",
+        imagen: '../images/camisup.jpg',
+        cantidad:1
+    },
 
-    //! MATES
-{
-id:30,
-name: 'mate azul',
-price: 15000,
-brand: 'azul',
-stock: 20,
-type: 3,
-},
-{
-id:31,
-name: 'mate negro',
-price: 14000,
-brand: 'negro',
-stock: 18,
-type: 3,
-},
-{
-id:32,
-name: 'mate blanco',
-price: 14000,
-brand: 'blanco',
-stock: 16,
-type: 3,
-},
+    {
+        id: 3,
+        nombre: "Camiseta dibu",
+        tipo: "camiseta",
+        desc: "camiseta arquero mundial 2022",
+        precio: 18000,
+        talle: "S",
+        imagen: '../images/camidibu.jpg',
+        cantidad:1
+    },
 
-    //! PELOTA
-{
-id:40,
-name: 'pelota mundial 2022',
-price: 12000,
-brand: 'al rihla',
-stock: 15,
-type: 4,
-},
-{
-id:41,
-name: 'pelota final 2022',
-price: 12000,
-brand: 'al rihla gold',
-stock: 14,
-type: 4,
-},
-{
-id:42,
-name: 'pelota liga argentina',
-price: 10000,
-brand: 'afa pro',
-stock: 18,
-type: 4,
-},
-{
-id:43,
-name: 'pelota copa america',
-price: 10000,
-brand: 'merlin',
-stock: 15,
-type: 4,
-},
+    {
+        id: 4,
+        nombre: "Pelota",
+        tipo: "pelota",
+        desc: "Pelota oficial del mundial 2022",
+        precio: 16000,
+        talle: "L",
+        imagen: '../images/pelota.jpg',
+        cantidad:1
+    },
 
-    //! ACCESORIOS
-{
-id:50,
-name: 'llaveros',
-price: 5000,
-brand: 'argenllave',
-stock: 25,
-type: 5,
-},
-{
-id:51,
-name: 'Cuadro',
-price: 8000,
-brand: 'messi',
-stock: 25,
-type: 5,
-},
-]
+    {
+        id: 5,
+        nombre: "Mate",
+        tipo: "mate",
+        desc: "Mate afa oficial de la seleccion",
+        precio: 14000,
+        talle: "L",
+        imagen: '../images/mate.jpg',
+        cantidad:1
+    },
+
+    {
+        id: 6,
+        nombre: "Pechera",
+        tipo: "pechera",
+        desc: "pechera de entrenamiento afa",
+        precio: 12000,
+        talle: "L",
+        imagen: '../images/pechera.jpg',
+        cantidad:1
+    }
+];
