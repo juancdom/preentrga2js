@@ -5,18 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tienda Online</title>
+  <title>LA SCALONETA</title>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  
+
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link rel="stylesheet" href="./styles.css">
+
 </head>
 
 <body>
 
-  <header>
-    <h1>Tienda Online</h1>
+ 
+  <header class="header">
+    <div class="logo">LA SCALONETA</div>
+    <input type="checkbox" id="toggle">
+    <label for="toggle"><img class="menu" src="./images/menu.png" alt="menu" width="100px" height="100px"></label>
+    <nav class="navigation">
+        <ul class="barritaMenu">
+            <li><a href="./index.html">productos</a></li>
+            <li><a href="./contacto.html"> contacto </a></li>
+            
+            
+        </ul>
+    </nav>
+
+
+
+
     <button id="cesta-carrito"><i class="fas fa-shopping-cart"></i><span id="contador-carrito">0</span></button>
   </header>
 

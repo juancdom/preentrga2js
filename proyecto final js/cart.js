@@ -58,12 +58,36 @@ const pintarCarrito = (carrito) => {
   });
 }
 
-const eliminarProductoCarrito = (id) => {
+/*const eliminarProductoCarrito = (id) => {
   const productoIndex = carrito.findIndex(producto => producto.id == id)
   carrito.splice(productoIndex, 1)
   pintarCarrito(carrito)
   actualizarTotalesCarrito(carrito)
-}
+}*/
+const eliminarProductoCarrito = (id) => {
+  Swal.fire({
+    title: '¿Estás seguro?',
+    text: 'Esta acción eliminará el producto del carrito',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonColor: '#3085d6',
+    cancelButtonColor: '#d33',
+    confirmButtonText: 'Sí, eliminar',
+    cancelButtonText: 'Cancelar'
+  }).then((result) => {
+    if (result.isConfirmed) {
+      const productoIndex = carrito.findIndex(producto => producto.id == id);
+      carrito.splice(productoIndex, 1);
+      pintarCarrito(carrito);
+      actualizarTotalesCarrito(carrito);
+      Swal.fire(
+        'Eliminado',
+        'El producto ha sido eliminado del carrito',
+        'success'
+      );
+    }
+  });
+};
 
 const actualizarTotalesCarrito = (carrito) => {
   const totalCantidad = carrito.reduce((acc, item) => acc + item.cantidad, 0)
