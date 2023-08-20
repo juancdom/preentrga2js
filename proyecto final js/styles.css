@@ -269,171 +269,39 @@
     }
   }
 
-  .contenedor-contacto {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-    padding: 20px 100px;
-    margin-top: 70px;
+  
+  
+  .field {
+    margin-bottom: 10px;
+    margin-left: 400px;
+    margin-top: 100px;
   }
   
-  .contenedor-contacto:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url(./Img/Tazas.jpg);
-    background-size: cover;
-    z-index: -1;
-    filter: blur(40px);
+  .field label {
+    display: block;
+    font-size: 30px;
+    color: lightskyblue;
+    font-weight:800;
+    
+  }
+  
+  .field input {
+    display: block;
+    min-width: 250px;
+    line-height: 1.5;
+    font-size: 14px;
+    height: 70px;
+    width: 500px;
+  }
+  
+  input[type="submit"] {
+    display: block;
+    padding: 6px 30px;
+    font-size: 14px;
+    background-color: #4460AA;
+    color: #fff;
+    border: none;
+    margin-left: 550px;
+    margin-top: 50px;
    
   }
-  
-  .caja-contacto {
-    max-width: 850px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
-  }
-  
-  .izquierda {
-    height: 100%;
-    background-image: url(./images/contacto.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
-  }
-  
-  .derecha {
-    padding: 25px 40px;
-  }
-  
-  .derecha h2 {
-    position: relative;
-    padding-bottom: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .derecha h2:after {
-    content: "";
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translate(-50%);
-    height: 4px;
-    width: 50px;
-    border-radius: 2px;
-    background-color:lightskyblue;
-  }
-  
-  .relleno {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    outline: none;
-    border: 2px solid rgba(0, 0, 0, 0);
-    background-color: rgba(230, 230, 230, 0.6);
-    font-size: 1.1rem;
-    margin-bottom: 22px;
-    transition: 0.3s;
-  }
-  
-  .relleno:hover {
-    background-color: rgba(0, 0, 0, 0.1);
-  }
-  
-  .mensaje:focus {
-    background-color: #fff;
-    border: 2px solid rgba 30, 85, 250, 0.47;
-  }
-  
-  .relleno area {
-    min-height: 150px;
-  }
-  
-  .derecha .btn {
-    width: 100%;
-    padding: 0.5rem 1rem;
-    font-size: 1.1rem;
-    background-color:lightskyblue;
-    cursor: pointer;
-    outline: none;
-    border: none;
-    color: #fff;
-    transition: 0.3s;
-  }
-  
-  .derecha .btn:hover {
-    background-color: lightskyblue;
-  }
-  
-  @media only screen and (max-width: 550px) {
-    .contenedor-contacto {
-      display: flex;
-      align-items: left;
-      align-self: left;
-      height: 650px;
-    }
-    .caja-contacto {
-      grid-template-columns: 1fr;
-      min-width: 320px;
-      align-self: center;
-      align-items: center;
-    }
-    .caja-contacto h2 {
-      font-size: 30px;
-    }
-    input::placeholder {
-      font-size: 15px;
-    }
-    textarea::placeholder {
-      font-size: 15px;
-    }
-  }
-  .MasVendidos h2 {
-    color: black;
-    text-align: center;
-    margin: 10px;
-    font-weight: 600;
-  }
-  
-  .card {
-    width: 100%;
-    margin: 20px;
-    border-radius: 6px;
-    overflow: hidden;
-    background-color: white;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
-    cursor: default;
-    transition: all 400ms ease;
-  }
-  
-  .card:hover {
-    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
-    transform: translateY(-3%);
-  }
-  
-  .card-body {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  @media only screen and (max-width: 550px) {
-    .card-group {
-      display: block;
-      width: 100%;
-      height: auto;
-      text-align: center;
-      line-height: 1.5;
-      margin: -20px;
-    }
-  }
- 
